@@ -33,7 +33,7 @@ describe('index.js', function () {
       drivers.push('Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby');
     });
 
-    it('returns a driver if beginning provided letters match', function () {
+    it('returns a driver if `beginning provided letters match', function () {
       expect(fuzzyMatch(drivers, 'Sa')).to.have.members(['Sammy', 'Sarah', 'Sally']);
     });
 
